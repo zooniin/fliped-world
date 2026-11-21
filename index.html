@@ -882,14 +882,14 @@ const STAGES = [
 const WRONG = ['아무 일도 일어나지 않았다.'];
 
 /* ── 오답 힌트: 한 스테이지에서 HINT_AFTER 번 틀리면 오답 문구 대신 힌트가 떠요 ── */
-const HINT_AFTER = 20;
+const HINT_AFTER = 10;
 const HINTS = {
   'Errant':'날짜',              // 01
   'Desk':'장소',                // 02
   'CD':'젱양 떡밥',             // 03
   'Belongings':'젱양 떡밥',     // 04
-  'Astrawberrysand':'날짜',     // 05
-  '-':'날짜'                    // 06 (휴대폰)
+  'Astrawberrysand':'젱양 떡밥',     // 05
+  '-':'휴대폰 잠금해제'                    // 06 (휴대폰)
 };
 function wrongCount(id){
   let n=0; try{ n=+(localStorage.getItem('maze-wrong-'+id)||0); }catch(e){}
